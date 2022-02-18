@@ -172,7 +172,7 @@ p {
 /* Wheel */
 .img-wheel {
   position: absolute;
-  left: 560px;
+  left: 754px;
   top: 210px;
 }
 
@@ -180,11 +180,11 @@ p {
   width: auto;
   height: auto;
   position: absolute;
-  left: 560px;
+  left: 754px;
   top: 210px;
   animation-name: spin;
   animation-duration: 5000ms;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 4s;
   animation-timing-function: linear; 
   /* transform: rotate(3deg); */
    /* transform: rotate(0.3rad);/ */
