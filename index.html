@@ -10,6 +10,12 @@
     <link href="src/css/bootstrap.min.css" rel="stylesheet" />
     <link href="src/css/style.css" rel="stylesheet" />
 
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/79d5c1886c.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Spin The Wheel</title>
   </head>
   <body>
@@ -22,9 +28,9 @@
 
     <!-- BANNER -->
     <div class="container-fluid header">
-      <div class="container ">
+      <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6 pt-5 mt-5">
+          <div class="col-lg-5 pt-5 mt-5">
             <h1 class="title-h1">Spin to Win</h1>
             <h4 class="title-h4">Spin the wheel to win prizes</h4>
 
@@ -33,67 +39,139 @@
               and any other information you want people to know.
             </p>
 
-            <button class="btn btn-primary">PLAY NOW</button>
+            <button class="btn btn-primary btn-text py-3 px-5">PLAY NOW</button>
           </div>
 
-          <div class="col"></div>
+          <!-- DOCTOR & WHEEL -->
+          <div class="col">
+            <img src="src/img/doctor.png" class="img-fluid ms-5" />
+          </div>
         </div>
       </div>
     </div>
 
     <!-- PRIZES -->
     <div class="container-fluid prize-bg">
-        <div class="container pb-5">
-        <h2 class="title-h2">Some of the prizes available</h2>
+      <div class="container pb-5">
+        <h2 class="title-h2 pb-3">Some of the prizes available</h2>
 
-        <div class="card border-light">
-            <div class="card-body">
-                <span class="badge bg-primary">PRIZE 01</span>
-              <span class="title-prize">Ipad Pro</span>
+        <div class="row">
+          <div class="col-3">
+            <div class="card border-light" data-bs-toggle="modal" data-bs-target="#modelIpad" type="button">
+              <div class="card-body">
+                <img src="src/img/ipad.png" class="float-start pe-3" />
+                <span class="badge bg-primary mt-3 mb-1">PRIZE 01</span><br />
+                <span class="title-prize">Ipad Pro</span>
+              </div>
             </div>
           </div>
 
-          <div class="card border-light">
-            <div class="card-body">
-                <span class="badge bg-primary">PRIZE 02</span>
+          <div class="col-3">
+            <div class="card border-light">
+              <div class="card-body">
+                <img src="src/img/iphone.png" class="float-start pe-3" />
+                <span class="badge bg-primary mt-3 mb-1">PRIZE 02</span><br />
                 <span class="title-prize">Iphone 13 Pro</span>
+              </div>
             </div>
           </div>
 
-          <div class="card border-light">
-            <div class="card-body">
-                <span class="badge bg-primary">PRIZE 03</span>
+          <div class="col-3">
+            <div class="card border-light">
+              <div class="card-body">
+                <img src="src/img/apple-watch.png" class="float-start pe-3" />
+                <span class="badge bg-primary mt-2 mb-1">PRIZE 03</span><br />
                 <span class="title-prize">Apple Watch 6</span>
+              </div>
             </div>
           </div>
 
-          <div class="card border-light">
-            <div class="card-body">
-                <span class="badge bg-primary">PRIZE 04</span>
+          <div class="col-3">
+            <div class="card border-light">
+              <div class="card-body">
+                <img src="src/img/apple-tags.png" class="float-start pe-3" />
+                <span class="badge bg-primary mt-2 mb-1">PRIZE 04</span><br />
                 <span class="title-prize">Apple Tags</span>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
     </div>
+
+    <!-- MODAL -->
+
+    <div
+      class="modal fade"
+      id="modelIpad"
+      tabindex="-1"
+      aria-labelledby="modalOne"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">Prize</li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Ipad Pro
+                  </li>
+                </ol>
+              </nav>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">
+                Play Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- FOOTER -->
     <div class="container-fluid">
-        <div class="container mb-5 pb-5">
-            <h2 class="title-h2 text-center">Subscribe to receive our latest posts. </h2>
+      <div class="container mb-5 pb-5">
+        <h2 class="title-h2 text-center pb-3">
+          Subscribe to receive our latest posts.
+        </h2>
 
-            <div class="row align-items-center">
-                <div class="col">
-                    <label for="inputName" class="form-label">Name</label>
-                  <input type="text" class="form-control" placeholder="Type your name" aria-label="Name">
-                </div>
-                <div class="col">
-                    <label for="inputEmail" class="form-label">Email</label>
-                  <input type="text" class="form-control" placeholder="Type your email" aria-label="Email">
-                </div>
-              </div>
-
-              <button class="btn btn-primary mt-4 mx-auto d-block">Subscribe</button>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <label for="inputName" class="form-label label-text">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control input-bg"
+              placeholder="Type your name"
+              aria-label="Name"
+            />
+          </div>
+          <div class="col-4">
+            <label for="inputEmail" class="form-label label-text">Email</label>
+            <input
+              type="text"
+              id="email"
+              class="form-control input-bg"
+              placeholder="Type your email"
+              aria-label="Email"
+            />
+          </div>
         </div>
+
+        <button class="btn btn-primary mt-4 mx-auto d-block py-2 px-4">
+          <i class="fa-solid fa-envelope pe-2"></i> Subscribe
+        </button>
+      </div>
     </div>
 
     <!-- JS -->

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
   color: #343c54;
@@ -17,10 +18,14 @@ body {
 .title-h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 68px;
+  line-height: 85px;
 }
 
 .title-h4 {
   font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
 }
 
 .title-h2 {
@@ -38,13 +43,70 @@ body {
   line-height: 26px;
 }
 
+/* Text */
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
 /* Header */
 .header {
-  background-image: url("../img/bg-header.png");
-  height: 600px;
+  background-image: url("../img/header.png");
+  background-repeat: no-repeat;
+  height: fit-content;
 }
 
 /* Prizes */
 .prize-bg {
   background-color: #eff5fa;
+}
+
+.card {
+  height: 100px;
+}
+
+/* Modal */
+.breadcrumb-item {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #8a9bb4;
+}
+
+.breadcrumb-item + .active {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1D1E21;
+}
+
+/* Form */
+.input-bg {
+  background-color: #eff5fa;
+  color: #d0dbe9;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.label-text {
+  font-family: "Poppins", sans-serif;
+  color: #8a9bb4;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
 }
