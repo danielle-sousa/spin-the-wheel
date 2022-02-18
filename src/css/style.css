@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap");
 
 body {
   color: #343c54;
@@ -75,6 +76,10 @@ p {
   height: 100px;
 }
 
+.card-bottom {
+  border-bottom: 2px solid #0078e7 !important;
+}
+
 /* Modal */
 .breadcrumb-item {
   font-family: "Poppins", sans-serif;
@@ -91,7 +96,50 @@ p {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  color: #1D1E21;
+  color: #1d1e21;
+}
+
+.title-modal {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  color: #1d1e21;
+}
+
+.subtitle-modal {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.divider {
+  width: 72px;
+  height: 0px;
+  border: 1px solid #1d1e21;
+}
+
+.modal-body {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.btn-modal {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 /* Form */
