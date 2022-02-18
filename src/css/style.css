@@ -67,6 +67,12 @@ p {
   height: fit-content;
 }
 
+.doctor {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 /* Prizes */
 .prize-bg {
   background-color: #eff5fa;
@@ -157,4 +163,40 @@ p {
   font-weight: normal;
   font-size: 13px;
   line-height: 19px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Wheel */
+.img-wheel {
+  position: absolute;
+  left: 560px;
+  top: 210px;
+}
+
+.wheel {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 560px;
+  top: 210px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }

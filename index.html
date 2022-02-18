@@ -29,7 +29,7 @@
     <!-- BANNER -->
     <div class="container-fluid header">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row">
           <div class="col-lg-5 pt-5 mt-5">
             <h1 class="title-h1">Spin to Win</h1>
             <h4 class="title-h4">Spin the wheel to win prizes</h4>
@@ -39,12 +39,13 @@
               and any other information you want people to know.
             </p>
 
-            <button class="btn btn-primary btn-text py-3 px-5">PLAY NOW</button>
+            <button class="btn btn-primary btn-text py-3 px-5" onclick="spinWheel()">PLAY NOW</button>
           </div>
 
           <!-- DOCTOR & WHEEL -->
-          <div class="col">
-            <img src="src/img/doctor.png" class="img-fluid ms-5" />
+          <div class="col-lg-5">
+            <img src="src/img/wheel.png" id="wheel" class="img-wheel"></img>
+            <img src="src/img/doctor.png" class="ms-5 doctor" />
           </div>
         </div>
       </div>
@@ -332,6 +333,7 @@
           Subscribe to receive our latest posts.
         </h2>
 
+        <div id="subscribe-form">
         <div class="row justify-content-center">
           <div class="col-4">
             <label for="inputName" class="form-label label-text">Name</label>
@@ -355,13 +357,19 @@
           </div>
         </div>
 
-        <button class="btn btn-primary mt-4 mx-auto d-block py-2 px-4">
+        <button class="btn btn-primary mt-4 mx-auto d-block py-2 px-4" onclick="submit()">
           <i class="fa-solid fa-envelope pe-2"></i> Subscribe
         </button>
+      </div>
+      </div>
+
+      <div class="container mb-5 pb-5 text-center hidden" id="subscribe-message">
+        <p>Hi João, your email has been registered. </p>
       </div>
     </div>
 
     <!-- JS -->
     <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/scripts.js"></script>
   </body>
 </html>
