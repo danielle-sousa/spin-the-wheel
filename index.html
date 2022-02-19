@@ -334,6 +334,7 @@
         </h2>
 
         <div id="subscribe-form">
+          
         <div class="row justify-content-center">
           <div class="col-lg-4 col-md-4">
             <label for="inputName" class="form-label label-text">Name</label>
@@ -343,6 +344,7 @@
               class="form-control input-bg"
               placeholder="Type your name"
               aria-label="Name"
+              required
             />
           </div>
           <div class="col-lg-4 col-md-4">
@@ -357,10 +359,11 @@
           </div>
         </div>
 
-        <button class="btn btn-primary mt-4 mx-auto d-block py-2 px-4" onclick="submit()">
+        <button class="btn btn-primary mt-4 mx-auto d-block py-2 px-4" type="button" onclick="submit()">
           <i class="fa-solid fa-envelope pe-2"></i> Subscribe 
         </button>
       </div>
+    
       </div>
 
       <div class="container mb-5 pb-5 text-center hidden" id="subscribe-message">
