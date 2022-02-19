@@ -65,6 +65,8 @@ p {
   background-image: url("../img/header.png");
   background-repeat: no-repeat;
   height: fit-content;
+  width: 100%;
+  background-size: cover;
 }
 
 .doctor {
@@ -76,10 +78,15 @@ p {
 /* Prizes */
 .prize-bg {
   background-color: #eff5fa;
+  background-repeat: no-repeat;
+  height: fit-content;
+  width: 100%;
+  background-size: cover;
 }
 
 .card {
   height: 100px;
+  width: 270px;
 }
 
 .card-bottom {
@@ -185,18 +192,142 @@ p {
   animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: 4s;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
   /* transform: rotate(3deg); */
-   /* transform: rotate(0.3rad);/ */
-   /* transform: rotate(3grad); */ 
-   /* transform: rotate(.03turn);  */
+  /* transform: rotate(0.3rad);/ */
+  /* transform: rotate(3grad); */
+  /* transform: rotate(.03turn);  */
 }
 
 @keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .header {
+    text-align: center;
+  }
+
+  .img-wheel {
+    position: absolute;
+    left: 36px;
+    top: 672px;
+    max-width: 140px;
+  }
+
+  .wheel {
+    position: absolute;
+    left: 36px;
+    top: 672px;
+    max-width: 140px;
+  }
+
+  .label-text {
+    padding-top: 10px;
+  }
+
+  .card {
+    width: 260px;
+    height: 100px;
+    margin-top: 15px;
+  }
+
+  .doctor {
+    margin-left: -80px;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .btn {
+    margin-left: 0% !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .img-wheel {
+    position: absolute;
+    left: 44px;
+    top: 510px;
+    max-width: 220px;
+  }
+
+  .wheel {
+    position: absolute;
+    left: 44px;
+    top: 510px;
+    max-width: 220px;
+  }
+
+  .label-text {
+    padding-top: 10px;
+  }
+
+  .card {
+    width: 260px;
+    height: 100px;
+    margin-top: 15px;
+  }
+
+  .doctor {
+    margin-left: -25px;
+    width: 100%;
+    
+  }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .img-wheel {
+    position: absolute;
+    left: 167px;
+    top: 540px;
+    max-width: 300px;
+  }
+
+  .wheel {
+    position: absolute;
+    left: 167px;
+    top: 540px;
+    max-width: 220px;
+  }
+
+  .doctor {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .card {
+    width: 270px;
+    height: 100px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-wheel {
+    position: absolute;
+    left: 750px;
+    top: 158px;
+    max-width: 230px;
+  }
+
+  .wheel {
+    position: absolute;
+    left: 750px;
+    top: 158px;
+    max-width: 230px;
+  }
+
+  .doctor {
+    margin-left: 120px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }

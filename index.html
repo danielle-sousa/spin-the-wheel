@@ -28,9 +28,9 @@
 
     <!-- BANNER -->
     <div class="container-fluid header">
-      <div class="container">
+      <div class="container container-sm container-xs">
         <div class="row">
-          <div class="col-lg-5 pt-5 mt-5">
+          <div class="col-lg-5 col-xl-5 col-sm-12 col-xs-12 pt-5 mt-5">
             <h1 class="title-h1">Spin to Win</h1>
             <h4 class="title-h4">Spin the wheel to win prizes</h4>
 
@@ -43,9 +43,9 @@
           </div>
 
           <!-- DOCTOR & WHEEL -->
-          <div class="col-lg-5 ms-5 ps-5">
+          <div class="col-lg-6 col-xl-6 col-sm-12 col-xs-12 ms-5 ps-5">
             <img src="src/img/wheel.png" id="wheel" class="img-wheel"></img>
-            <img src="src/img/doctor2.png" class=" doctor" />
+            <img src="src/img/doctor2.png" class="img-fluid doctor" />
           </div>
         </div>
       </div>
@@ -57,40 +57,40 @@
         <h2 class="title-h2 pb-3">Some of the prizes available</h2>
 
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3 col-md-5 col-sm-6 col-12">
             <div class="card border-light card-bottom" data-bs-toggle="modal" data-bs-target="#modalIpad" type="button">
               <div class="card-body">
-                <img src="src/img/ipad.png" class="float-start pe-3" />
+                <img src="src/img/ipad.png" class="float-start pe-3 img-fluid" />
                 <span class="badge bg-primary mt-3 mb-1">PRIZE 01</span><br />
                 <span class="title-prize">Ipad Pro</span>
               </div>
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-md-5 col-sm-6 col-12">
             <div class="card border-light card-bottom" data-bs-toggle="modal" data-bs-target="#modalIphone" type="button">
               <div class="card-body">
-                <img src="src/img/iphone.png" class="float-start pe-3" />
+                <img src="src/img/iphone.png" class="float-start pe-3 img-fluid" />
                 <span class="badge bg-primary mt-3 mb-1">PRIZE 02</span><br />
                 <span class="title-prize">Iphone 13 Pro</span>
               </div>
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-md-5 col-sm-6 col-12">
             <div class="card border-light card-bottom" data-bs-toggle="modal" data-bs-target="#modalWatch" type="button">
               <div class="card-body">
-                <img src="src/img/apple-watch.png" class="float-start pe-3" />
+                <img src="src/img/apple-watch.png" class="float-start pe-3 img-fluid" />
                 <span class="badge bg-primary mt-2 mb-1">PRIZE 03</span><br />
                 <span class="title-prize">Apple Watch 6</span>
               </div>
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-md-5 col-sm-6 col-12">
             <div class="card border-light card-bottom" data-bs-toggle="modal" data-bs-target="#modalTags" type="button">
               <div class="card-body">
-                <img src="src/img/apple-tags.png" class="float-start pe-3" />
+                <img src="src/img/apple-tags.png" class="float-start pe-3 img-fluid" />
                 <span class="badge bg-primary mt-2 mb-1">PRIZE 04</span><br />
                 <span class="title-prize">Apple Tags</span>
               </div>
@@ -123,7 +123,7 @@
               </nav>
               <button
                 type="button"
-                class="btn-close"
+                class="btn-close me-3"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
@@ -335,7 +335,7 @@
 
         <div id="subscribe-form">
         <div class="row justify-content-center">
-          <div class="col-4">
+          <div class="col-lg-4 col-md-4">
             <label for="inputName" class="form-label label-text">Name</label>
             <input
               type="text"
@@ -345,7 +345,7 @@
               aria-label="Name"
             />
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-md-4">
             <label for="inputEmail" class="form-label label-text">Email</label>
             <input
               type="text"
@@ -358,7 +358,7 @@
         </div>
 
         <button class="btn btn-primary mt-4 mx-auto d-block py-2 px-4" onclick="submit()">
-          <i class="fa-solid fa-envelope pe-2"></i> Subscribe
+          <i class="fa-solid fa-envelope pe-2"></i> Subscribe 
         </button>
       </div>
       </div>
