@@ -71,8 +71,8 @@ p {
 
 .doctor {
   position: relative;
-  top: 0;
-  left: 0;
+  margin-left: 10%;
+  max-width: 610px;
 }
 
 /* Prizes */
@@ -178,16 +178,14 @@ p {
 /* Wheel */
 .img-wheel {
   position: absolute;
-  left: 754px;
-  top: 210px;
+  top: 179px;
+  max-width: 290px;
 }
 
 .wheel {
-  width: auto;
-  height: auto;
   position: absolute;
-  left: 754px;
-  top: 210px;
+  top: 179px;
+  max-width: 290px;
   animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: 4s;
@@ -207,98 +205,42 @@ p {
   }
 }
 
-@media screen and (max-width: 390px) {
-  .header {
-    text-align: center;
-  }
-
+@media screen and (max-width: 1200px) {
   .img-wheel {
     position: absolute;
-    left: 36px;
-    top: 672px;
-    max-width: 140px;
+    top: 31%;
+    max-width: 276px;
   }
 
   .wheel {
     position: absolute;
-    left: 36px;
-    top: 672px;
-    max-width: 140px;
-  }
-
-  .label-text {
-    padding-top: 10px;
-  }
-
-  .card {
-    width: 260px;
-    height: 100px;
-    margin-top: 15px;
+    top: 31%;
+    max-width: 276px;
   }
 
   .doctor {
-    margin-left: -80px;
-    margin-top: 50px;
-    width: 100%;
-  }
-
-  .btn {
-    margin-left: 0% !important;
+    margin-left: 10%;
+    position: relative;
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 980px) {
   .img-wheel {
     position: absolute;
-    left: 44px;
-    top: 510px;
-    max-width: 220px;
+    top: 583px;
+    max-width: 281px;
   }
 
   .wheel {
     position: absolute;
-    left: 44px;
-    top: 510px;
-    max-width: 220px;
-  }
-
-  .label-text {
-    padding-top: 10px;
-  }
-
-  .card {
-    width: 260px;
-    height: 100px;
-    margin-top: 15px;
-  }
-
-  .doctor {
-    margin-left: -25px;
-    width: 100%;
-    
-  }
-}
-
-@media screen and (min-width: 980px) and (max-width: 1200px) {
-  .img-wheel {
-    position: absolute;
-    left: 167px;
-    top: 540px;
-    max-width: 300px;
-  }
-
-  .wheel {
-    position: absolute;
-    left: 167px;
-    top: 540px;
-    max-width: 220px;
+    top: 583px;
+    max-width: 281px;
   }
 
   .doctor {
     width: 100%;
     position: relative;
-    top: 0;
-    left: 0;
+    margin-top: 50px;
   }
 
   .card {
@@ -308,25 +250,140 @@ p {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 756px) {
   .img-wheel {
     position: absolute;
-    left: 750px;
-    top: 158px;
-    max-width: 230px;
+    top: 570px;
+    max-width: 237px;
   }
 
   .wheel {
     position: absolute;
-    left: 750px;
-    top: 158px;
-    max-width: 230px;
+    top: 570px;
+    max-width: 237px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .img-wheel {
+    position: absolute;
+    top: 552px;
+    max-width: 203px;
+  }
+
+  .wheel {
+    position: absolute;
+    top: 552px;
+    max-width: 203px;
   }
 
   .doctor {
-    margin-left: 120px;
-    position: relative;
-    top: 0;
-    left: 0;
+    max-width: 430px;
+  }
+
+  .label-text {
+    padding-top: 10px;
+  }
+
+  .card {
+    width: 260px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .img-wheel {
+    top: 577px;
+    max-width: 196px;
+  }
+
+  .wheel {
+    top: 577px;
+    max-width: 196px;
+  }
+}
+
+@media screen and (max-width: 477px) {
+  .img-wheel {
+    top: 578px;
+  }
+
+  .wheel {
+    top: 578px;
+  }
+}
+
+@media screen and (max-width: 463px) {
+  .img-wheel {
+    max-width: 188px;
+  }
+
+  .wheel {
+    max-width: 188px;
+
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .img-wheel {
+    top: 653px;
+    max-width: 174px;
+  }
+
+  .wheel {
+    top: 653px;
+    max-width: 174px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .img-wheel {
+    top: 657px;
+  }
+
+  .wheel {
+    top: 657px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .img-wheel {
+    top: 654px;
+    max-width: 161px;
+  }
+
+  .wheel {
+    top: 654px;
+    max-width: 161px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .header {
+    text-align: center;
+  }
+
+  .img-wheel {
+    top: 681px;
+    max-width: 150px;
+  }
+
+  .wheel {
+    top: 681px;
+    max-width: 150px;
+  }
+
+  .label-text {
+    padding-top: 10px;
+  }
+
+  .card {
+    width: 260px;
+    height: 100px;
+    margin-top: 15px;
+  }
+
+  .btn {
+    margin-left: 0% !important;
   }
 }
